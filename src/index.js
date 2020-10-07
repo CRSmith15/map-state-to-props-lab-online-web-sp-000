@@ -14,7 +14,9 @@ const store = createStore(
 
 ReactDOM.render(
   // add imports and code
-  <App />
+  <Provider store={store}>
+    <App />
+  </Provider>
   // add imports and code
   ,
   document.getElementById('root')
